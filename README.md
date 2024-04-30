@@ -51,26 +51,30 @@ Open in RTL viewers to get RTL diagram output. */
 Program for flipflops and verify its truth table in quartus using Verilog programming.
 Developed by: Krithick Vivekananda
 RegisterNumber:212223240075
-module tflipflop( input clk, rst_n, input t, output reg q, output q_bar);
-always@(posedge clk)
-begin 
-if(!rst_n)
-q<=0;
+Program for flipflops and verify its truth table in quartus using Verilog programming.
+Developed by:JAI SURYA R
+Register no:212223230084
+
+module EXP_8(D,Clock,reset,Q,Qbar);
+input D,Clock,reset;
+output reg Q,Qbar;
+always @(negedge Clock)
+if(!reset)
+	Q<=0;
 else
-begin
-q<=(t?~q:q);
-end
-end
-assign q_bar = ~q;
+	Q<=D;
 endmodule
+
 ```
 
 **RTL LOGIC FOR FLIPFLOPS**
-![Screenshot 2024-04-30 071206](https://github.com/krithickvivek/D-FLIPDLOP-NEGEDGE/assets/139331296/0252ab15-b68d-4c35-bf1f-7356cd9a12bb)
+![322782970-35809b70-dde5-443c-9a95-10c4dd6bdf68](https://github.com/krithickvivek/D-FLIPDLOP-NEGEDGE/assets/139331296/3eed490d-a932-4990-89f6-a66f36eabac6)
+
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
-![Screenshot 2024-04-30 071844](https://github.com/krithickvivek/D-FLIPDLOP-NEGEDGE/assets/139331296/f15f473f-9c7e-4275-9fd0-4857b1c0630e)
+
+![322783107-dff86801-d6d6-4050-a4c5-cf1222b09713](https://github.com/krithickvivek/D-FLIPDLOP-NEGEDGE/assets/139331296/ed90708b-2e15-4791-b3a2-f86a2f29bd8b)
 
 
 **RESULTS**
