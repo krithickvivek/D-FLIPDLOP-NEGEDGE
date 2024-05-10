@@ -75,4 +75,4 @@ endmodule
 
 **RESULTS**
 
-Thus,the T flipflop using verilog and validating their functionality using their functional tables was implemented.
+Thus,the D flipflop using verilog and validating their functionality using their functional tables was implemented.
